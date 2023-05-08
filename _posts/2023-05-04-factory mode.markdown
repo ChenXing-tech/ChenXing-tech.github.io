@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "factory mode"
+date:   2023-05-08 17:16:50 +0800
+categories: jekyll update
+
+---
+
 # 设计模式之创建型模式
 
 ## 1. 工厂模式
