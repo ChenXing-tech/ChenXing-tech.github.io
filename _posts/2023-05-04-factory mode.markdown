@@ -109,7 +109,7 @@ public class Main(){
 
 ### 2.1  什么是抽象工厂模式
 
-抽象工厂模式是对工厂模式的进一步延伸，可以将杂乱的物品按照特性进行分类，并将具有相同属性的物品生成工厂。
+抽象工厂模式是对工厂模式的进一步延伸，可以将杂乱的对象按照特性进行分类，并将具有相同属性的对象生成工厂。
 
 ### 2.2 如何对抽象工厂进行分类
 
@@ -119,14 +119,14 @@ is a是指对象映射物品的实质。
 
 have a是指对象映射物品的属性，
 
-eg: 我是一个人，我的地域属性是东北， 所以is a people ， has a feature happy，这样就可以将对象进行分组，从而建立一个工厂-HappyFactory。
+eg: 电脑，属性是mac， 所以is a computer ， have a Mac feature，这样就可以将对象进行分组，建立computerFactory，抽象工厂为macComputerFactory。
 
 ### 2.3 实现步骤
 
 1. 需求抽象化
 2. 创建抽象产品类
 3. 创建具体产品继承抽象产品
-4. 创建抽象工厂（产品的某一属性的集合） eg: happy,sad 都属于emotion。
+4. 创建抽象工厂（产品的某一属性的集合） eg: mac , windows都属于computer。
 5. 创建具体工厂 
 
 ### 2.4 抽象工厂模式结构
@@ -140,13 +140,6 @@ eg: 我是一个人，我的地域属性是东北， 所以is a people ， has a
 * 抽象产品类
 */
 public interface Chair {
-
-    boolean hasLeg();
-
-    boolean sitOn();
-}
-
-public interface CoffeeTable {
 
     boolean hasLeg();
 
