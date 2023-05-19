@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "生成器模式"
+title:  "builder"
 date:   2023-05-19 16:36:50 +0800
 categories: jekyll update
 
