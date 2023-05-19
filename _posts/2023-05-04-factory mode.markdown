@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "工厂模式"
+title:  "FactoryMode"
 date:   2023-05-08 17:16:50 +0800
 categories: jekyll update
 
@@ -28,7 +28,7 @@ categories: jekyll update
 
 ### 5 工厂方法模式结构
 
-![工厂方法模式结构](/Users/mac/workspace/project/github/ChenXing-tech.github.io/_posts/structure-20230516150217975.png)
+![工厂方法模式结构](https://p.ipic.vip/5mjaj2.png)
 
 ### 6 实现步骤
 

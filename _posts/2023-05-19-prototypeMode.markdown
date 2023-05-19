@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "生成器模式"
-date:   2023-05-08 17:16:50 +0800
+date:   2023-05-19 16:36:50 +0800
 categories: jekyll update
 
 
@@ -31,7 +31,7 @@ categories: jekyll update
 
 ### 5 生成器方法结构
 
-![生成器设计模式结构](/Users/mac/workspace/project/github/ChenXing-tech.github.io/_posts/structure.png)
+![生成器设计模式结构](https://p.ipic.vip/jxcvib.png)
 
 ### 6 实现步骤
 

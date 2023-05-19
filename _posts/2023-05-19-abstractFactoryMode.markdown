@@ -1,13 +1,11 @@
 ---
 layout: post
-title:  "抽象工厂模式"
-date:   2023-05-08 17:16:50 +0800
+title:  "AbstractFactoryMode"
+date:   2023-05-19 16:34:50 +0800
 categories: jekyll update
 
 
 ---
-
-## 
 
 ## 抽象工厂模式
 
@@ -43,7 +41,7 @@ eg: 电脑，属性是mac， 所以is a computer ， have a Mac feature，这样
 
 ### 6 抽象工厂模式结构
 
-![抽象工厂设计模式](/Users/mac/workspace/project/github/ChenXing-tech.github.io/_posts/structure-20230516150147300.png)
+![抽象工厂设计模式](https://p.ipic.vip/um8mdz.png)
 
 ### 7 实现效果
 
@@ -116,5 +114,3 @@ public class ModernFurnitureFactory implements FurnitureFactory{
 ```
 
 > 抽象工厂模式: https://refactoringguru.cn/design-patterns/abstract-factory
-
-## 
