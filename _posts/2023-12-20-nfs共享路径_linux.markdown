@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "2023年12月20日，种下一颗种子，用心呵护它发芽"
+date:   2023-12-20 15:03:00 +0800
+categories: jekyll update
+
+---
+
+1.	Master slave都安装nsf
+yum -y install nfs-utils
+2.	Master中编辑exports文件，添加从机
+vim /etc/exports
+添加内容：
+/var/lib/jenkins/yueyue_settings/ 192.168.200.223(rw,sync) 192.168.200.224(rw,sync, no_root_squash)
+/home/admin/data/repository/ 192.168.200.223(rw,sync ,no_root_squash) 192.168.200.224(rw,sync)
+
+注意：加上,no_root_squash后，slave可用root任意操作目录下的文件，否则无法操作在master上的root创建的文件夹
+3.	运行
+systemctl restart  nfs
+注意，要修改主服务器上的yueyue_settings和repository的权限
+Chmod -R 777 yueyue_settings
+4.	Slave：
+a)	启动service rpcbind start
+b)	systemctl start  rpcbind
+c)	运行mount -t nfs 192.168.0.11:/home/admin/data/repository/  /home/admin/data/repository/
+d)	mount -t nfs 192.168.0.11:/var/lib/jenkins/yueyue_settings  /var/lib/jenkins/yueyue_settings
