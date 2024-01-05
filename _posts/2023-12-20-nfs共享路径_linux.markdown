@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "2023年12月20日，种下一颗种子，用心呵护它发芽"
+title:  "2023年12月20日，nfs共享目录"
 date:   2023-12-20 15:03:00 +0800
 categories: jekyll update
 
